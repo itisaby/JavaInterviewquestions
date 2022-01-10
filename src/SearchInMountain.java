@@ -10,7 +10,7 @@ public class SearchInMountain {
         }
         int secondtry = orderAgnosticBS(arr, target, peak+1, arr.length-1);
         if(secondtry!=-1){
-            return secondtry
+            return secondtry;
         }
         return -1;
 
