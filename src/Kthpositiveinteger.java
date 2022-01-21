@@ -12,7 +12,5 @@ public class Kthpositiveinteger {
             }
         }
         return k+start;
-
     }
-
 }
