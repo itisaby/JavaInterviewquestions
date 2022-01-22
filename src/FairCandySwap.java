@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class FairCandySwap {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
         int alicesum = arraysum(aliceSizes);
