@@ -4,8 +4,8 @@ public class Pattern {
 //        pattern2(4);
 //        pattern3(4);
 //          pattern4(4);
-          pattern5(4);
-
+//          pattern5(4);
+          pattern6(4);
 
     }
     static void pattern1(int n){
@@ -55,6 +55,24 @@ public class Pattern {
                 }
             }
             System.out.println("");
+        }
+    }
+    static void pattern6(int n){
+        for (int row = 0; row < 2*n; row++) {
+            int totalCols = row>n? 2*n-row: row;
+            int spaces = n - totalCols;
+            for (int s = 0; s < spaces; s++) {
+                System.out.print(" ");
+            }
+            for (int col = 0; col < totalCols; col++) {
+                System.out.print("* ");
+            }
+            System.out.println("");
+        }
+    }
+    static void pattern7(int n){
+        for (int row = 1; row <= n; row++) {
+
         }
     }
 
