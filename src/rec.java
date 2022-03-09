@@ -4,8 +4,10 @@ public class rec {
 //        num(1,5);
 //          reversenum(4, 4);
 //        numbacktracking(4, 4);
-        revnumbacktracking(4, 4);
+//        revnumbacktracking(4, 4);
+        System.out.println(DigitSum(1234));
     }
+
 
     public static void func(int c){
         if(c==5){
@@ -74,5 +76,11 @@ public class rec {
             return  false;
         }
         return isPalindrome(s, i+1, n);
+    }
+    public static int DigitSum(int n){
+        if(n<=1){
+            return 1;
+        }
+        return n%10 + DigitSum(n/10);
     }
 }

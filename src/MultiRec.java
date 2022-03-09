@@ -2,7 +2,7 @@ public class MultiRec {
     public static void main(String[] args) {
 //        System.out.println(Fibo(6));
         int[] arr = new int[]{1, 2, 44, 121, 44, 65, 3};
-        int target = 44;
+        int target = 2;
         System.out.println(BinarySearchwithR(arr, arr[0], arr[arr.length-1], target));
     }
     public static int Fibo(int n){
@@ -16,11 +16,11 @@ public class MultiRec {
         if(arr[mid] == target){
             return mid;
         }
-        if(arr[mid]>target){
-            BinarySearchwithR(arr, mid+1, end, target);
-        }
         if(arr[mid]<target){
-            BinarySearchwithR(arr, start, mid-1, target);
+            return BinarySearchwithR(arr, mid+1, end, target);
+        }
+        if(arr[mid]>target){
+            return BinarySearchwithR(arr, start, mid-1, target);
         }
         return -1;
     }
