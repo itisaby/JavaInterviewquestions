@@ -5,7 +5,8 @@ public class rec {
 //          reversenum(4, 4);
 //        numbacktracking(4, 4);
 //        revnumbacktracking(4, 4);
-        System.out.println(DigitSum(1234));
+//        System.out.println(DigitSum(1234));
+        System.out.println(DigitProd(1234));
     }
 
 
@@ -82,5 +83,11 @@ public class rec {
             return 1;
         }
         return n%10 + DigitSum(n/10);
+    }
+    public static int DigitProd(int n){
+        if(n%10 == n){
+            return n;
+        }
+        return (n%10) * DigitProd(n/10);
     }
 }
