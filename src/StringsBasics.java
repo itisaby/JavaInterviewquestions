@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StringsBasics {
     public static void main(String[] args) {
         String name = "Arnab Maity";  //string is immutable
@@ -15,7 +17,12 @@ public class StringsBasics {
         //Comparison Of strings
         // == method -> Comparator -> check for values and the reference variables pointing to same object
         // .equals() -> Checks for the value
-
-
+        Integer num = new Integer(12);
+        System.out.println(num.toString());
+        System.out.println(Arrays.toString(new int[]{1, 2, 3, 4, 5}));
+        float aby = 453.23122f;
+        System.out.printf("Formatted number is %.2f", aby);
+        System.out.println();
+        System.out.printf("Pie: %.3f", Math.PI);
     }
 }
