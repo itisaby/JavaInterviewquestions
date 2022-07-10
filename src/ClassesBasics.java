@@ -51,6 +51,7 @@ class Student {
     int rno;
     String name;
     float marks = 90;
+    Boolean happy;
 
     // we need a way to add the values of the above
     // properties object by object
@@ -84,6 +85,7 @@ class Student {
         this.rno = rno;
         this.name = name;
         this.marks = marks;
+        this.happy = true;
     }
 
 }
