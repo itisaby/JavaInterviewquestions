@@ -8,5 +8,8 @@ public class Greetings {
         printaby();
         System.out.println("Hello world");
         message();
+        for (int i = 0; i < 6; i++) {
+            System.out.println("Grretingz package");
+        }
     }
 }
