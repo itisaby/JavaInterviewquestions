@@ -32,7 +32,6 @@ public class MergeSort {
             }
             k++;
         }
-
         //remaining elements
         while(i<a.length){
             mix[k] = a[i];
